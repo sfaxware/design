@@ -1,0 +1,6 @@
+object Block3: TBlock3
+  object Port1: TInputPort
+  end
+  object Port2: TOutputPort
+  end
+end

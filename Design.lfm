@@ -1,0 +1,70 @@
+object DesignSimulator: TCustomDesign
+  object Block1: TBlock1
+    DeviceName = 'Block 1'
+    Color = $000000FF
+    Left = 316
+    Top = 383
+    Width = 100
+    Height = 100
+  end
+  object Block2: TBlock2
+    DeviceName = 'Packetizer'
+    Color = $000000FF
+    Left = 481
+    Top = 526
+    Width = 100
+    Height = 100
+  end
+  object Block3: TBlock3
+    DeviceName = 'Block 3'
+    Color = $000000FF
+    Left = 156
+    Top = 298
+    Width = 100
+    Height = 100
+  end
+  object Connector4: TConnector
+    OutputPort = Block1.Port3
+    InputPort = Block3.Port1
+  end
+  object Connector5: TConnector
+    OutputPort = Block2.Port1
+    InputPort = Block1.Port2
+  end
+  object Block4: TBlock4
+    DeviceName = 'Source 1'
+    Color = $000000FF
+    Left = 657
+    Top = 302
+    Width = 100
+    Height = 100
+  end
+  object Connector7: TConnector
+    OutputPort = Block4.Output
+    InputPort = Block1.Port1
+  end
+  object Block5: TBlock5
+    DeviceName = 'Block 5'
+    Color = $000000FF
+    Left = 653
+    Top = 481
+    Width = 100
+    Height = 100
+  end
+  object FileDumpProbe10: TFileDumpProbe10
+    DeviceName = 'Block 10'
+    Color = $000000FF
+    Left = 4
+    Top = 429
+    Width = 100
+    Height = 100
+  end
+  object Connector10: TConnector
+    OutputPort = Block3.Port2
+    InputPort = FileDumpProbe10.Input
+  end
+  object Connector11: TConnector
+    OutputPort = Block5.Output
+    InputPort = Block2.Port2
+  end
+end
