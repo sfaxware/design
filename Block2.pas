@@ -4,7 +4,13 @@ uses
   Blocks;
 
 type
+  
+  { TBlock2 }
+
   TBlock2 = class(TBlock)
+    Port1: TOutputPort;
+    Port2: TInputPort;
+  public
     procedure Execute; override;
   end;
 

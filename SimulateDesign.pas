@@ -4,7 +4,7 @@ uses
   Design;
 
 begin
-  DesignSimulator := TCustomDesign.Create('MyCustomDesign');
+  DesignSimulator := TCustomDesign.Create(nil);
   DesignSimulator.Run;
   DesignSimulator.Free;
 end.

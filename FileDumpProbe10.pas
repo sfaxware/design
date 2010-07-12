@@ -3,7 +3,7 @@ unit FileDumpProbe10;
 interface
 
 uses
-  Blocks;
+  Probes;
 
 type
   TFileDumpProbe10 = class(TFileDumpProbe)

@@ -1,4 +1,2 @@
 object Block5: TBlock5
-  object Output: TOutputPort
-  end
 end

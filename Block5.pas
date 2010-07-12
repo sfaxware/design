@@ -3,10 +3,11 @@ unit Block5;
 interface
 
 uses
-  Blocks;
+  Sources;
 
 type
   TBlock5 = class(TRandomSource)
+  public
     procedure Execute; override;
   end;
 
