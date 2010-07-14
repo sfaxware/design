@@ -15,12 +15,21 @@ type
   end;
 
 implementation
+
+uses
+  Classes;
+
 procedure TBlock2.Execute;
+var
+  S: Integer;
 begin;
-  {Write here your code}
+  Port2.Pop(S);
+  Port1.Push(S);
 end;
 
 initialization
+  {$R *.lfm}
+  RegisterClass(TBlock2);
 
 finalization
 

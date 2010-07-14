@@ -17,7 +17,7 @@ uses
 
 procedure TBlock4.Execute;
 begin;
-  {Write here your code}
+  inherited;
 end;
 
 initialization

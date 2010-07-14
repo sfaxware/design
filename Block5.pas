@@ -18,7 +18,7 @@ uses
 
 procedure TBlock5.Execute;
 begin;
-  {Write here your code}
+  inherited;
 end;
 
 initialization
@@ -26,4 +26,5 @@ initialization
   RegisterClass(TBlock5);
 
 finalization
+
 end.
