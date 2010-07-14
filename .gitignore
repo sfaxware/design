@@ -1,2 +1,7 @@
+/*.lps
+/*.swp
 /build/*.o
 /build/*.ppu
+/build/*.lfm
+/build/*.lrs
+/build/SimulateDesign*
