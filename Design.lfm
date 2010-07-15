@@ -33,6 +33,8 @@ object DesignSimulator: TCustomDesign
   end
   object Block4: TBlock4
     DeviceName = 'Source 1'
+	InitialSeed = 1234
+	Amplitude = 512
     Color = $000000FF
     Left = 657
     Top = 302
@@ -44,7 +46,9 @@ object DesignSimulator: TCustomDesign
     InputPort = Block1.Port1
   end
   object Block5: TBlock5
-    DeviceName = 'Block 5'
+    DeviceName = 'Source 5'
+	InitialSeed = 100
+	Amplitude = 4
     Color = $000000FF
     Left = 653
     Top = 481
