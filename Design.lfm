@@ -68,9 +68,11 @@ object DesignSimulator: TCustomDesign
   object Connector10: TConnector
     OutputPort = Block3.Port2
     InputPort = FileDumpProbe10.Input
+	Depth = 31
   end
   object Connector11: TConnector
     OutputPort = Block5.Output
     InputPort = Block2.Port2
+	Depth = 15
   end
 end
