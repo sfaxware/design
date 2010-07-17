@@ -15,7 +15,7 @@ object DesignSimulator: TCustomDesign
     Width = 100
     Height = 100
   end
-  object Block3: TBlock3
+  object FftBlock: TFftBlock
     DeviceName = 'Block 3'
     Color = $000000FF
     Left = 138
@@ -25,7 +25,7 @@ object DesignSimulator: TCustomDesign
   end
   object Connector4: TConnector
     OutputPort = Block1.Port3
-    InputPort = Block3.Port1
+    InputPort = FftBlock.Port1
   end
   object Connector5: TConnector
     OutputPort = Block2.Port1
@@ -66,7 +66,7 @@ object DesignSimulator: TCustomDesign
     Height = 100
   end
   object Connector10: TConnector
-    OutputPort = Block3.Port2
+    OutputPort = FftBlock.Port2
     InputPort = FileDumpProbe10.Input
 	Depth = 31
   end

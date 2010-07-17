@@ -1,4 +1,4 @@
-unit Block3;
+unit FftBlock;
 interface
 uses
   Blocks;
@@ -7,7 +7,7 @@ type
   
   { TBlock3 }
 
-  TBlock3 = class(TBlock)
+  TFftBlock = class(TBlock)
     Port1: TInputPort;
     Port2: TOutputPort;
   public
@@ -17,11 +17,12 @@ type
 implementation
 
 uses
-  Classes;
+  Classes, Complex;
 
-procedure TBlock3.Execute;
+procedure TFftBlock.Execute;
 var
   S: Integer;
+  V:
 begin;
   Port1.Pop(S);
   Port2.Push(S);
@@ -29,7 +30,7 @@ end;
 
 initialization
   {$R *.lfm}
-  RegisterClass(TBlock3);
+  RegisterClass(TFftBlock);
 
 finalization
 

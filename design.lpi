@@ -51,7 +51,6 @@
   <CompilerOptions>
     <Version Value="8"/>
     <SearchPaths>
-      <IncludeFiles Value="$(ProjOutDir)/"/>
       <OtherUnitFiles Value="../dtsl/core/block/;../dtsl/core/fifo/;$(LazarusDir)/lcl/units/$(TargetCPU)-$(TargetOS)/"/>
       <UnitOutputDirectory Value="build"/>
     </SearchPaths>
