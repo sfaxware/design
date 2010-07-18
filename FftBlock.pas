@@ -17,7 +17,7 @@ type
 implementation
 
 uses
-  Classes, Complex;
+  Classes, Complex, ComplexMatrix, ComplexVectors;
 
 procedure TFftBlock.Execute;
 var

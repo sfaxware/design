@@ -51,7 +51,7 @@
   <CompilerOptions>
     <Version Value="8"/>
     <SearchPaths>
-      <OtherUnitFiles Value="../dtsl/core/block/;../dtsl/core/fifo/;$(LazarusDir)/lcl/units/$(TargetCPU)-$(TargetOS)/"/>
+      <OtherUnitFiles Value="../dtsl/trunk/core/block/;../dtsl/trunk/core/fifo/;../dtsl/trunk/core/num/;$(LazarusDir)/lcl/units/$(TargetCPU)-$(TargetOS)/"/>
       <UnitOutputDirectory Value="build"/>
     </SearchPaths>
     <Other>

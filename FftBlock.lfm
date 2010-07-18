@@ -1,4 +1,4 @@
-object Block3: TBlock3
+object FftBlock: TFftBlock
   object Port1: TInputPort
   end
   object Port2: TOutputPort
