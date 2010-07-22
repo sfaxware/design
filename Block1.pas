@@ -18,16 +18,21 @@ type
 implementation
 
 uses
-  Classes;
+  Classes, ComplexVectors, Complex;
 
 procedure TBlock1.Execute;
 var
-  S1, S2, S3: Integer;
+  S: Integer;
+  z: TComplex;
+  V: TVector;
 begin;
-  Port1.Pop(S1);
-  Port2.Pop(S2);
-  S3 := S1 + S2;
-  Port3.Push(S3);
+  Port1.Pop(S);
+  z.x := S;
+  Port1.Pop(S);
+  z.y := S;
+  Port2.Pop(V, SizeOf(V));
+  Mul(V, z);
+  Port3.Push(V, SizeOf(V));
 end;
 
 initialization

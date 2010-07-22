@@ -17,15 +17,22 @@ type
 implementation
 
 uses
-  Classes, Complex, ComplexMatrix, ComplexVectors;
+  Classes, Complex, ComplexVectors;
 
 procedure TFftBlock.Execute;
 var
   S: Integer;
-  V:
+  V: TVector;
+  i: Integer;
 begin;
-  Port1.Pop(S);
-  Port2.Push(S);
+  Port1.Pop(V, SizeOf(V));
+  //FFT(V.Values, 7);
+  for i := 0 to V.n - 1 do begin
+    S := Round(V.Values[i].x);
+    Port2.Push(S);
+    S := Round(V.Values[i].y);
+    Port2.Push(S);
+  end;
 end;
 
 initialization

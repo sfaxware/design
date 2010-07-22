@@ -17,14 +17,22 @@ type
 implementation
 
 uses
-  Classes;
+  Classes, ComplexVectors;
 
 procedure TBlock2.Execute;
 var
   S: Integer;
+  V: TVector;
+  i: Integer;
 begin;
-  Port2.Pop(S);
-  Port1.Push(S);
+  V := Vector(128);
+  for i := 0 to V.n - 1 do begin
+    Port2.Pop(S);
+    V.Values[i].x := S;
+    Port2.Pop(S);
+    V.Values[i].y := S;
+  end;
+  Port1.Push(V, SizeOf(V));
 end;
 
 initialization
