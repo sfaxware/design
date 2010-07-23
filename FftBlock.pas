@@ -26,7 +26,7 @@ var
   i: Integer;
 begin;
   Port1.Pop(V, SizeOf(V));
-  //FFT(V.Values, 7);
+  FFT(V.Values^, 7);
   for i := 0 to V.n - 1 do begin
     S := Round(V.Values[i].x);
     Port2.Push(S);
