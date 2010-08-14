@@ -18,7 +18,14 @@
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <Units Count="5">
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="dtslcore"/>
+        <MaxVersion Minor="1" Valid="True"/>
+        <MinVersion Minor="1" Valid="True"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="2">
       <Unit0>
         <Filename Value="SimulateDesign.pas"/>
         <IsPartOfProject Value="True"/>
@@ -30,28 +37,11 @@
         <HasResources Value="True"/>
         <UnitName Value="Design"/>
       </Unit1>
-      <Unit2>
-        <Filename Value="probe.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Probe"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="../core/block/source.pas"/>
-        <IsPartOfProject Value="True"/>
-        <HasResources Value="True"/>
-        <UnitName Value="Source"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="designs.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Designs"/>
-      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
     <SearchPaths>
-      <OtherUnitFiles Value="../dtsl/trunk/core/block/;../dtsl/trunk/core/fifo/;../dtsl/trunk/core/num/;$(LazarusDir)/lcl/units/$(TargetCPU)-$(TargetOS)/"/>
       <UnitOutputDirectory Value="build"/>
     </SearchPaths>
     <Other>
