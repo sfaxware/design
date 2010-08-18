@@ -26,15 +26,17 @@ object DesignSimulator: TCustomDesign
   object Connector4: TConnector
     OutputPort = Block1.Port3
     InputPort = FftBlock.Port1
+    Depth = 127
   end
   object Connector5: TConnector
     OutputPort = Block2.Port1
     InputPort = Block1.Port2
+    Depth = 127
   end
   object Block4: TBlock4
     DeviceName = 'Source 1'
-	InitialSeed = 1234
-	Amplitude = 512
+    InitialSeed = 1234
+    Amplitude = 512
     Color = $000000FF
     Left = 657
     Top = 302
@@ -44,11 +46,12 @@ object DesignSimulator: TCustomDesign
   object Connector7: TConnector
     OutputPort = Block4.Output
     InputPort = Block1.Port1
+    Depth = 127
   end
   object Block5: TBlock5
     DeviceName = 'Source 5'
-	InitialSeed = 100
-	Amplitude = 4
+    InitialSeed = 100
+    Amplitude = 4
     Color = $000000FF
     Left = 653
     Top = 481
@@ -57,8 +60,8 @@ object DesignSimulator: TCustomDesign
   end
   object FileDumpProbe10: TFileDumpProbe10
     DeviceName = 'File Dump Probe 10'
-	FileName = '/tmp/FileDumpProbe10.txt'
-	SampleQty = 2
+    FileName = '/tmp/FileDumpProbe10.txt'
+    SampleQty = 2
     Color = $000000FF
     Left = 4
     Top = 429
@@ -68,11 +71,11 @@ object DesignSimulator: TCustomDesign
   object Connector10: TConnector
     OutputPort = FftBlock.Port2
     InputPort = FileDumpProbe10.Input
-	Depth = 31
+    Depth = 31
   end
   object Connector11: TConnector
     OutputPort = Block5.Output
     InputPort = Block2.Port2
-	Depth = 15
+    Depth = 15
   end
 end
