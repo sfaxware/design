@@ -30,14 +30,19 @@
         <Filename Value="SimulateDesign.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="SimulateDesign"/>
+        <EditorIndex Value="0"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="Design.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="Design"/>
+        <EditorIndex Value="1"/>
+        <Loaded Value="True"/>
       </Unit1>
     </Units>
+    <PathDelim Value="/"/>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="8"/>
