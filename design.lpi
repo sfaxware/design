@@ -20,7 +20,7 @@
     </RunParams>
     <RequiredPackages Count="1">
       <Item1>
-        <PackageName Value="dtslcore"/>
+        <PackageName Value="rsdcore"/>
         <MaxVersion Minor="1" Valid="True"/>
         <MinVersion Minor="1" Valid="True"/>
       </Item1>
