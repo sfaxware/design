@@ -1,9 +1,21 @@
 program SimulateDesign;
+{$MODE OBJFPC}{$LONGSTRINGS ON}{$INTERFACE CORBA}
 
 uses
-  Design;
+  SysUtils, Design;
+
+var
+  DesignSimulator: TCustomDesign;
+  progPath, ProgDir, SimDir: string;
 
 begin
+  ProgPath := ParamStr(0);
+  ProgDir := ExtractFileDir(ProgPath);
+  SimDir := ExtractFileDir(ProgDir) + '/simulations';
+  if not DirectoryExists(SimDir) then begin
+    MkDir(SimDir);
+  end;
+  ChDir(SimDir);
   DesignSimulator := TCustomDesign.Create(nil);
   DesignSimulator.Run;
   DesignSimulator.Free;

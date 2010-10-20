@@ -26,6 +26,7 @@ var
   i: Integer;
 begin;
   Port1.Pop(V, SizeOf(V));
+  {V should be a vector of 128 samples, so FFT size if 7}
   FFT(V.Values^, 7);
   for i := 0 to V.n - 1 do begin
     S := Round(V.Values[i].x);
