@@ -1,6 +1,6 @@
 object DesignSimulator: TCustomDesign
   object Block1: TBlock1
-    DeviceName = 'Block 1'
+    Caption = 'Block 1'
     Color = $000000FF
     Left = 321
     Top = 386
@@ -8,7 +8,7 @@ object DesignSimulator: TCustomDesign
     Height = 100
   end
   object Block2: TBlock2
-    DeviceName = 'Packetizer'
+    Caption = 'Packetizer'
     Color = $000000FF
     Left = 485
     Top = 540
@@ -16,7 +16,7 @@ object DesignSimulator: TCustomDesign
     Height = 100
   end
   object FftBlock: TFftBlock
-    DeviceName = 'Block 3'
+    Caption = 'Block 3'
     Color = $000000FF
     Left = 138
     Top = 305
@@ -34,7 +34,7 @@ object DesignSimulator: TCustomDesign
     Depth = 127
   end
   object Block4: TBlock4
-    DeviceName = 'Source 1'
+    Caption = 'Source 1'
     InitialSeed = 1234
     Amplitude = 512
     Color = $000000FF
@@ -49,7 +49,7 @@ object DesignSimulator: TCustomDesign
     Depth = 127
   end
   object Block5: TBlock5
-    DeviceName = 'Source 5'
+    Caption = 'Source 5'
     InitialSeed = 100
     Amplitude = 4
     Color = $000000FF
@@ -59,7 +59,7 @@ object DesignSimulator: TCustomDesign
     Height = 100
   end
   object FileDumpProbe10: TFileDumpProbe10
-    DeviceName = 'File Dump Probe 10'
+    Caption = 'Probe 10'
     FileName = '/tmp/FileDumpProbe10.txt'
     SampleQty = 2
     Color = $000000FF
