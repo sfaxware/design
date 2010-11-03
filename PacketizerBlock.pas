@@ -1,4 +1,4 @@
-unit Block2;
+unit PacketizerBlock;
 interface
 uses
   Blocks;
@@ -7,7 +7,7 @@ type
   
   { TBlock2 }
 
-  TBlock2 = class(TBlock)
+  TPacketizerBlock = class(TBlock)
     Port1: TOutputPort;
     Port2: TInputPort;
   public
@@ -19,7 +19,7 @@ implementation
 uses
   Classes, ComplexVectors;
 
-procedure TBlock2.Execute;
+procedure TPacketizerBlock.Execute;
 var
   S: Integer;
   V: TVector;
@@ -37,7 +37,7 @@ end;
 
 initialization
   {$R *.lfm}
-  RegisterClass(TBlock2);
+  RegisterClass(TPacketizerBlock);
 
 finalization
 

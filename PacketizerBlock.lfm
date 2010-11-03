@@ -1,4 +1,4 @@
-object Block2: TBlock2
+object PacketizerBlock: TPacketizerBlock
   object Port1: TOutputPort
   end
   object Port2: TInputPort

@@ -7,7 +7,7 @@ object DesignSimulator: TCustomDesign
     Width = 100
     Height = 100
   end
-  object Block2: TBlock2
+  object PacketizerBlock: TPacketizerBlock
     Caption = 'Packetizer'
     Color = $000000FF
     Left = 485
@@ -29,7 +29,7 @@ object DesignSimulator: TCustomDesign
     Depth = 127
   end
   object Connector5: TConnector
-    OutputPort = Block2.Port1
+    OutputPort = PacketizerBlock.Port1
     InputPort = Block1.Port2
     Depth = 127
   end
@@ -60,7 +60,7 @@ object DesignSimulator: TCustomDesign
   end
   object FileDumpProbe10: TFileDumpProbe10
     Caption = 'Probe 10'
-    FileName = '/tmp/FileDumpProbe10.txt'
+    FileName = 'FileDumpProbe10.txt'
     SampleQty = 2
     Color = $000000FF
     Left = 4
@@ -75,7 +75,7 @@ object DesignSimulator: TCustomDesign
   end
   object Connector11: TConnector
     OutputPort = Block5.Output
-    InputPort = Block2.Port2
+    InputPort = PacketizerBlock.Port2
     Depth = 15
   end
 end
