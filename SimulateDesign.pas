@@ -5,7 +5,7 @@ uses
   SysUtils, Design;
 
 var
-  DesignSimulator: TCustomDesign;
+  DesignSimulator: TTopDesign;
   progPath, ProgDir, SimDir: string;
 
 begin
@@ -16,7 +16,7 @@ begin
     MkDir(SimDir);
   end;
   ChDir(SimDir);
-  DesignSimulator := TCustomDesign.Create(nil);
+  DesignSimulator := TTopDesign.Create(nil);
   DesignSimulator.Run;
   DesignSimulator.Free;
 end.

@@ -9,7 +9,7 @@ type
   
   { TCustomDesign }
 
-  TCustomDesign = class(TDesign)
+  TTopDesign = class(TDesign)
     Block1: TBlock1;
     Block2: TPacketizerBlock;
     FftBlock: TFftBlock;
@@ -18,9 +18,6 @@ type
     FileDumpProbe10: TFileDumpProbe10; 
     PacketizerBlock: TPacketizerBlock; 
   end;
-
-var
-  DesignSimulator: TCustomDesign;
 
 implementation
 

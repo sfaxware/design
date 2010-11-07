@@ -1,4 +1,4 @@
-object DesignSimulator: TCustomDesign
+object DesignSimulator: TTopDesign
   object Block1: TBlock1
     Caption = 'Block 1'
     Color = $000000FF
