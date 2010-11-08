@@ -1,6 +1,6 @@
 object DesignSimulator: TTopDesign
   object Block1: TBlock1
-    Caption = 'Block 1'
+    Caption = 'Scaler'
     Color = $000000FF
     Left = 321
     Top = 386
@@ -16,7 +16,7 @@ object DesignSimulator: TTopDesign
     Height = 100
   end
   object FftBlock: TFftBlock
-    Caption = 'Block 3'
+    Caption = 'FFT'
     Color = $000000FF
     Left = 138
     Top = 305
