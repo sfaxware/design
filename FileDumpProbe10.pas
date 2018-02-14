@@ -3,10 +3,14 @@ unit FileDumpProbe10;
 interface
 
 uses
-  Probes;
+  Probes, Blocks;
 
 type
+  
+  { TFileDumpProbe10 }
+
   TFileDumpProbe10 = class(TFileDumpProbe)
+    Input: TInputPort;
   public
     procedure Execute; override;
   end;

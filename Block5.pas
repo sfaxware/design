@@ -3,10 +3,14 @@ unit Block5;
 interface
 
 uses
-  Sources;
+  Sources, Blocks;
 
 type
+  
+  { TBlock5 }
+
   TBlock5 = class(TRandomSource)
+    Output: TOutputPort;
   public
     procedure Execute; override;
   end;

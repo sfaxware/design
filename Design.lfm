@@ -1,16 +1,16 @@
 object DesignSimulator: TTopDesign
   object Block1: TBlock1
     Caption = 'Scaler'
-    Color = $000000FF
-    Left = 321
-    Top = 386
+    Color = $00FF0016
+    Left = 314
+    Top = 338
     Width = 100
     Height = 100
   end
   object PacketizerBlock: TPacketizerBlock
     Caption = 'Packetizer'
     Color = $000000FF
-    Left = 485
+    Left = 486
     Top = 540
     Width = 100
     Height = 100
@@ -18,8 +18,8 @@ object DesignSimulator: TTopDesign
   object FftBlock: TFftBlock
     Caption = 'FFT'
     Color = $000000FF
-    Left = 138
-    Top = 305
+    Left = 150
+    Top = 311
     Width = 100
     Height = 100
   end
@@ -53,8 +53,8 @@ object DesignSimulator: TTopDesign
     InitialSeed = 100
     Amplitude = 4
     Color = $000000FF
-    Left = 653
-    Top = 481
+    Left = 661
+    Top = 461
     Width = 100
     Height = 100
   end
@@ -63,8 +63,8 @@ object DesignSimulator: TTopDesign
     FileName = 'FileDumpProbe10.txt'
     SampleQty = 2
     Color = $000000FF
-    Left = 4
-    Top = 429
+    Left = 6
+    Top = 444
     Width = 100
     Height = 100
   end
